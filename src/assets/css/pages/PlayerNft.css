@@ -1,0 +1,387 @@
+.tab-bar-container .tabs-container {
+  border-radius: 0px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: calc(100vw - 100%);
+}
+
+.tab-bar-container {
+  background-color: #171923;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.tab-bar-container .tab-item {
+  width: 85px;
+}
+
+/* .search-bar {
+  padding: 10px;
+  width: 360px;
+  margin: auto;
+} */
+
+.nft-container {
+  width: 379px;
+  height: calc(100vh - 150px);
+  margin: 0 auto;
+  background-color: #222435;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 420px) {
+  .nft-container {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.nft-image {
+  width: 100%;
+  height: 100%;
+}
+
+.nft-info-title {
+  margin-top: 16px;
+  font-family: 'Rajdhani-regular';
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.nft-info-by {
+  margin-top: 4px;
+  font-family: 'Rajdhani-regular';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #abacb5;
+}
+
+.nft-info-by a {
+  color: #abacb5;
+  text-decoration: underline;
+}
+
+.nft-separate-line {
+  margin-top: 16px;
+  height: 1px;
+  width: 100%;
+  background: #abacb5;
+}
+
+.nft-owner {
+  margin-top: 16px;
+}
+
+.nft-owner span {
+  font-family: 'Rajdhani-regular';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #abacb5;
+}
+
+.nft-owner div {
+  margin: 8px 0;
+  font-family: 'Rajdhani-semibold';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.nft-mint-date {
+  margin-top: 16px;
+}
+
+.nft-container .nft-mint-date {
+  display: block;
+}
+
+.nft-mint-date span {
+  font-family: 'Rajdhani-regular';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #abacb5;
+}
+
+.nft-mint-date div {
+  margin: 8px 0;
+  font-family: 'Rajdhani-semibold';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: white;
+}
+
+.nft-btn {
+  font-family: 'Rajdhani-semibold';
+  font-style: normal;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 20px auto 15px auto;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 60px;
+  gap: 10px;
+
+  text-align: center;
+  background-color: #81df0d;  
+  border: 0;
+  color: #171923;
+  width: 280px;
+  height: 50px;
+
+  border-radius: 8px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  cursor: pointer;
+}
+
+.nft-send-container {
+  width: 100%;
+  padding: 40px 30px;
+  margin: auto;
+}
+
+.nft-send-error {
+  background: red;
+  width: 100%;
+}
+
+.nft-send-container .field-wrapper .textinput-wrapper {
+  background-color: #f4f5f6;
+  width: 100%;
+}
+
+.nft-send-heading {
+  margin-bottom: 40px;
+  font-family: 'Rajdhani-regular';
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: white;
+}
+
+.nft-send-desc {
+  margin-top: 40px;
+  font-family: 'Rajdhani-regular';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.nft-confirmed-container {
+  width: 100%;
+}
+
+.nft-confirmed-heading {
+  margin-top: 40px;
+  font-family: 'Rajdhani-regular';
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.nft-confirmed-button {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.nft-confirmed-img {
+  width: 70px;
+  height: 70px;
+  margin-top: 10px;
+}
+
+.nft-confirmed-close {
+  font-family: 'Rajdhani-regular';
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  text-decoration: underline;
+  color: #abacb5;
+}
+
+.nft-arrow-down {
+  width: 40px !important;
+  height: 40px !important;
+  color: #6bc909;
+  position: fixed;
+  bottom: 150px;
+  cursor: pointer;
+  margin-left: 55px;
+  background: #222435;
+  border-radius: 100%;
+
+}
+
+.nft-container .nft-bid-info-header {
+  color: white;
+  font-family: 'Rajdhani-semibold';
+  font-weight: 600;
+  font-size: 16px;
+  /* margin-bottom: 10px; */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.nft-container .nft-bid-info-body {
+  color: #6bc909;
+  font-family: 'Rajdhani-bold';
+  font-weight: 700;
+  font-size: 21px;
+  margin-top: 3px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .nft-arrow-down:hover {
+  width: 60px !important;
+  height: 60px !important;
+  transition: all 0.4s;
+  right: calc(49% - 10px);
+  bottom: 90px;
+} */
+
+@media only screen and (max-width: 420px) {
+  .nft-arrow-down {
+    /* bottom: 90px;
+    right: calc(45%); */
+    bottom: 90px;
+    margin-left: unset;
+}
+
+/* .nft-arrow-down:hover {
+    right: calc(45% - 10px);
+    bottom: 80px;
+  } */
+}
+
+.nft-detail-container {
+  width: 379px;
+  height: calc(100vh - 150px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #222435;
+}
+
+@media only screen and (max-width: 420px) {
+  .nft-detail-container {
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+  }
+}
+
+.nft-detail-arrow-up {
+  color: #6bc909;
+  width: 40px !important;
+  height: 40px !important;
+  /* position: absolute; */
+  /* top: 80px; */
+  cursor: pointer;
+}
+
+/* .nft-detail-arrow-up:hover {
+  width: 60px !important;
+  height: 60px !important;
+  top: 130px;
+  transition: all 0.4s;
+} */
+
+.nft-detail-title {
+  margin-top: 25px;
+  font-family: 'Rajdhani-regular';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  width: 327px;
+}
+
+.nft-detail-attr {
+  width: 327px;
+}
+
+.nft-detail-attr-title {
+  font-family: 'Rajdhani-regular';
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin: 40px 0 24px;
+}
+
+.nft-detail-attr-no {
+  font-family: 'Rajdhani-regular';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #6bc909;
+}
+
+.nft-detail-claim {
+  width: 327px;
+}
+
+.nft-detail-claim-title {
+  font-family: 'Rajdhani-regular';
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin: 40px 0 24px;
+}
+
+.nft-detail-claim-no {
+  font-family: 'Rajdhani-regular';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #6bc909;
+}

@@ -1,0 +1,117 @@
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1216px;
+}
+.center-carousel {
+  display: flex;
+  justify-content: center;
+}
+
+.alice-carousel__stage-item {
+  width: 304px !important;
+}
+
+.alice-carousel__stage-item * {
+  line-height: 16px;
+}
+
+.alice-carousel__stage-item .nft-card .second-part .fullwidth * {
+  line-height: 25px;
+}
+
+.alice-carousel__dots-item:not(.__custom).__active {
+  background: #6bc909;
+  border-radius: 4px;
+  width: 30px;
+}
+
+.alice-carousel__dots-item:not(.__custom):hover {
+  background: #6bc909;
+}
+
+@media (max-width: 1216px) {
+  .carousel {
+    width: 916px;
+  }
+}
+
+@media (max-width: 912px) {
+  .carousel {
+    width: 100vw;
+  }
+
+  .alice-carousel {
+    width: 304px;
+  }
+}
+
+.alice-carousel__prev-btn {
+  /* position: absolute;
+  left: -50px;
+  width: unset;
+  top: 190px; */
+
+  position: absolute;
+  left: -115px;
+  width: unset;
+  top: 120px;
+  opacity: 0.2;
+  filter: brightness(0) invert(1);
+  cursor: pointer;
+}
+
+.alice-carousel__prev-btn > img {
+  height: 75px;
+}
+
+.alice-carousel__prev-btn-item {
+  color: #6bc909;
+  transform: scale(3, 6);
+}
+
+.alice-carousel__next-btn {
+  /* position: absolute;
+  right: -50px;
+  width: unset;
+  top: 190px; */
+
+  position: absolute;
+  right: -112px;
+  width: unset;
+  top: 120px;
+  opacity: 0.2;
+  filter: brightness(0) invert(1);
+  cursor: pointer;
+}
+
+.alice-carousel__next-btn > img {
+  height: 75px;
+}
+
+.alice-carousel__next-btn-item {
+  color: #6bc909;
+  transform: scale(3, 6);
+}
+
+@media only screen and (max-width: 600px) {
+  .alice-carousel__next-btn {
+    display: none !important;
+  }
+  .alice-carousel__prev-btn {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 912px) {
+  .alice-carousel {
+    width: 620px;
+  }
+}
+
+@media only screen and (max-width: 1368px) and (min-width: 1024px) {
+  .alice-carousel {
+    width: 75vw;
+  }
+}

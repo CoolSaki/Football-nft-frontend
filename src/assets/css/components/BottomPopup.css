@@ -1,0 +1,111 @@
+.bottom-popup {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 600; /* Sit on top */
+  /*padding-top: 100px;  Location of the box */
+  /* padding-top: 10vh; */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 50%; /* Full height */
+  /* overflow: auto; Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: 1.3s;
+}
+
+.bottom-popup.show {
+  display: block;
+  height: 100%;
+}
+
+@keyframes slidein-low {
+  from {
+    top: 30%;
+    transform: scaleY(0.1);
+  }
+
+  to {
+    top: 0%;
+  }
+}
+
+/* Modal Content */
+.bottom-popup-content {
+  position: relative;
+  margin-top: 180px !important;
+  background-color: #222435;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 1vh;
+  height: calc(75vh-100px);
+  margin: auto;
+  
+    min-height: calc(75vh - 120px);
+  /* width: 350px; */
+
+  animation-duration: 0.3s;
+  animation-name: slidein-low;
+}
+
+@media only screen and (max-width: 420px) {
+  .bottom-popup-content.nft,
+  .bottom-popup-content.stake {
+    position: absolute;
+    bottom: 0px;
+    height: unset;
+  }
+}
+
+.bottom-popup-content .close-button {
+  font-family: 'Rajdhani-semibold';
+  font-weight: 600;
+  font-size: 18px;
+  color: #6bc909;
+  text-decoration: underline;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 420px) {
+  .bottom-popup-content {
+    width: 100%;
+    min-height: calc(100% - 180px) !important;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .bottom-popup-content.stake {
+    min-height: calc(100% - 380px)!important;
+    margin-top: 380px !important;
+  }
+}
+
+/* desktop send*/
+@media only screen and (min-width: 420px) {
+  /* .bottom-popup.nft {
+    top: auto;
+    bottom: 70px;
+  } */
+
+  .bottom-popup-content.wallet {
+    width: 375px;
+  }
+
+  .bottom-popup-content.nft {
+    min-height: calc(100% - 320px);
+    margin-top: 250px !important;
+    width: 379px;
+  }
+  .bottom-popup-content.stake {
+    min-height: calc(100% - 450px);
+    margin-top: 380px !important;
+    width: 379px;
+  }
+  .bottom-popup-content.wallet {
+    height: 670px;
+  }
+}
+
+

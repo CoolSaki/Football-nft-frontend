@@ -1,0 +1,89 @@
+.terms-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  height: 100%;
+  /* margin-bottom: 6em; */
+  background-color: #222435;
+}
+
+.terms-container.disclaimer-container {
+  height: 100% !important;
+}
+
+.terms-container.career-container {
+  height: 795px;
+  background-color: #222435;
+}
+
+.policy-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.new-nft-title.terms-title {
+  padding: unset;
+}
+
+.terms-subtitle {
+  height: 32px;
+  padding: unset;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.terms-content-wrapper {
+  width: 78vw;
+}
+
+.terms-content > ol,
+ul {
+  padding-left: 20px;
+}
+
+.terms-content > p > span {
+  font-weight: 700;
+}
+
+.terms-content {
+  width: inherit;
+  font-family: 'Rajdhani-regular';
+  font-style: normal;
+  font-weight: 100;
+  font-size: 16px;
+  margin-top: 24px;
+}
+
+.terms-content-wrapper > .terms-content > a {
+  color: #6bc909;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .terms-content-wrapper {
+    width: 78vw;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .terms-content-wrapper {
+    width: 55vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .terms-content-wrapper {
+    width: 560px;
+  }
+  .terms-container.disclaimer-container {
+    height: 100vh !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .terms-content-wrapper {
+    width: 560px;
+  }
+}

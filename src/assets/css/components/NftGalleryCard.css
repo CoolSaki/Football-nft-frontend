@@ -1,0 +1,56 @@
+.nft-gallery-card {
+  position: relative;
+  cursor: pointer;
+  width: 145px;
+  height: 145px;
+}
+
+.nft-gallery-card .nft-gallery-img {
+  width: 100%;
+  height: 100%;
+}
+
+.nft-gallery-card .nft-gallery-firsticon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.nft-gallery-card .nft-gallery-secondicon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #df8d11;
+}
+
+.nft-gallery-card .nft-gallery-thirdicon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: #fff;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.nft-gallery-card .nft-gallery-thirdicon .nft-gallery-thirdicondot {
+  width: 12px;
+  height: 12px;
+  color: #000;
+}
+
+.nft-gallery-card .nft-gallery-lanchbtn {
+  position: absolute;
+  right: 45px;
+  bottom: 20px;
+  background: #81df0d;
+  padding: 10px;
+  color: #fff;
+}
+
+.nft-gallery-card .nft-gallery-lanchbtn:hover {
+  opacity: 0.9;
+}

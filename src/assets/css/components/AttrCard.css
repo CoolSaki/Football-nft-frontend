@@ -1,0 +1,32 @@
+.attr-card {
+  background: rgba(107, 201, 9, 0.06);
+  /* Primary/300 */
+
+  border: 1px solid #81df0d;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.attr-card-title {
+  font-family: 'Rajdhani-regular';
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #6bc909;
+  margin: 8px 0;
+}
+
+.attr-card-desc {
+  font-family: 'Rajdhani-regular';
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 8px 0;
+}

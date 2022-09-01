@@ -1,0 +1,113 @@
+body {
+  margin: auto;
+  font-family: 'Rajdhani-bold';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #222435;
+  /* background-color: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px); */
+  /* background-image: url('@assets/images/stadium1.png'); */
+  background-size: cover;
+  font-style: normal;
+  color: white;
+  justify-content: center;
+} 
+
+.mt-40 {
+  margin-top: 40px !important;
+}
+
+.mt-20 {
+  margin-top: 20px !important;
+}
+
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+
+.mt-90 {
+  margin-top: 90px;
+}
+
+.mb-40 {
+  margin-bottom: 40px !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.fullwidth {
+  width: 100% !important;
+}
+
+.font-16 {
+  font-size: 16px;
+}
+
+.default-width {
+  width: unset !important;
+}
+
+.m-0 {
+  margin: unset !important;
+}
+
+.text-error {
+  color: red;
+}
+
+/* @font-face {
+  font-family: 'Rajdhani-regular';
+  src: local('Rajdhani-regular'), url('@assets/fonts/rajdhani.regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Rajdhani-semibold';
+  src: local('Rajdhani-semibold'), url('@assets/fonts/rajdhani.semibold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Rajdhani-bold';
+  src: local('Rajdhani-bold'), url('@assets/fonts/rajdhani.bold.ttf') format('truetype');
+} */
+
+@font-face {
+    font-family: 'Rajdhani-bold';
+    src: url('@assets/fonts/Rajdhani-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rajdhani-regular';
+    src: url('@assets/fonts/Rajdhani-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rajdhani-semibold';
+    src: url('@assets/fonts/Rajdhani-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}

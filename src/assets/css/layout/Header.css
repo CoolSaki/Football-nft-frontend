@@ -1,0 +1,62 @@
+.header {
+  background-color: #222435;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  border-bottom: 1px solid #56596a;
+  position: fixed;
+  width: 100%;
+  z-index: 500;
+  top: 0;
+}
+
+.header h6 {
+  position: static;
+  /* width: 207px; */
+  left: 84px;
+  top: 12px;
+  bottom: 12px;
+  /* Heading 5 */
+  font-family: 'Rajdhani-bold';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  /* identical to box height, or 16px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  /* Neutral/White */
+  color: #ffffff;
+  /* Inside auto layout */
+  flex: none;
+  flex-grow: 0;
+  margin: 0px 56px;
+}
+
+.header > .logo,
+.header > .wallet-address {
+  padding-left: calc(100vw - 100%);
+}
+
+.user-header h6 {
+  width: unset !important;
+  margin: unset !important;
+}
+
+.header-title {
+  margin: unset !important;
+}
+
+.header > a {
+  height: 100%;
+}
+.header > a > svg{
+  height: 100%;
+  margin: auto 22px;
+}
+
+.header > .logo > a {
+  display: flex;
+}

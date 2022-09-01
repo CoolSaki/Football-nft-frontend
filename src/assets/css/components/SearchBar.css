@@ -1,0 +1,78 @@
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  color: #abacb5;
+  height: 60px;
+  width: 100%;
+}
+
+.search-bar .MuiFormControlLabel-label {
+  white-space: nowrap;
+}
+
+.search-filter-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.search-filter-section.justify-end {
+  justify-content: flex-end;
+}
+
+.search-filter-section > .icon-color {
+  color: #abacb5;
+}
+
+.in-menu-search {
+  width: 260px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 8px;
+
+  position: static;
+  /* width: 80vw; */
+  height: 40px;
+  left: 24px;
+  top: 0px;
+
+  background: #ffffff;
+  border-radius: 12px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+  margin: 0px 24px;
+}
+
+.purchase-search {
+  margin: 0 26px !important;
+}
+
+.in-menu-search input {
+  position: static;
+  width: 100%;
+  font-family: 'Rajdhani-bold';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  color: #2c2f45;
+  border: none;
+  outline: none;
+}
+
+@media only screen and (max-width: 320px) {
+  .in-menu-search {
+    width: 220px;
+  }
+}

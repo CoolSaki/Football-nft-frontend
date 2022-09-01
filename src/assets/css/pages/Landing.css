@@ -1,0 +1,1183 @@
+.sub-menu-btn {
+  display: none !important;
+}
+/* bottom-section */
+.bottom {
+  background-color: #12131c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.bottom-title {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.container > section.news-letter {
+  min-height: unset;
+  background-color: #12131c;
+}
+
+.container > section.header-ticker-section {
+  min-height: unset;
+}
+
+.header-ticker-bar {
+  width: 100%;
+  height: 56px;
+  background: #171923;
+  display: flex;
+  flex-direction: row;
+  /* padding-top: 8px; */
+  overflow: hidden;
+}
+
+.header-ticker-bar .spinner__circle {
+  margin: auto;
+}
+
+.header-ticker-container > div {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.header-ticker-container .img,
+.header-ticker-container .img img {
+  width: 40px;
+  height: 40px;
+}
+
+.header-ticker-container .img-radius.cache-img {
+  padding: 1px;
+}
+
+.header-ticker-container .player-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Rajdhani-regular';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  width: max-content;
+  margin-left: 10px;
+  margin-right: 30px;
+}
+
+.header-ticker-container .player-info .player-name {
+  color: #f3b127;
+  line-height: 18px;
+  margin-left: 0px;
+  text-align: left;
+}
+
+.header-ticker-container .player-info .player-price-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-ticker-container .player-info .player-price-change {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 2px;
+}
+
+/* .ticker
+  display flex */
+
+.header-ticker-container {
+  display: flex;
+  /* animation: animate1 80s infinite linear; */
+  /* transform: translateX(100vw); */
+  cursor: default;
+  /* position: absolute; */
+  background-color: #171923;
+}
+
+/* @keyframes animate1 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.header-ticker-container.second {
+  animation: animate2 90s infinite linear;
+  animation-delay: -20s;
+}
+@keyframes animate2 {
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.header-ticker-container:hover {
+  animation-play-state: paused;
+} */
+
+/* 
+.newsletter-submit {
+  width: 70%;
+}  */
+
+.newsletter-submit.disabled {
+  pointer-events: none;
+}
+
+.bottom-caption-wrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.caption-divider {
+  border-top: 1px solid #abacb5;
+  width: 200px;
+}
+
+.newsletter-caption {
+  /* width: 420px !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase; */
+  padding: 0 85px !important;
+}
+
+.blog-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Rajdhani-bold';
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.blog-content {
+  display: flex;
+  align-items: center;
+  padding-bottom: 60px;
+  justify-content: center;
+  width: 600px;
+  font-family: 'Rajdhani-regular';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.company-content {
+  padding: 0 0 8px;
+}
+
+.input-box {
+  padding: 15.5px;
+  border-radius: 4px;
+  text-align: center;
+  width: 400px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 125%;
+  margin-top: 32px;
+  font-family: 'Rajdhani-semibold';
+}
+
+.loop-stay-form {
+  display: flex;
+  /* width: 400px; */
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-box.input-disabled {
+  background-color: #abacb5;
+}
+
+.input-box.otp {
+  border-radius: 8px !important;
+  width: 40px !important;
+  padding: 0px !important;
+  font-family: 'Rajdhani-bold';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  background: #2c2f45;
+  color: #abacb5;
+  outline: none;
+  border: none;
+  margin: 0 2px;
+}
+
+.faq-title {
+  margin: 60px 0px 24px;
+}
+.faqs-container .faq-title {
+  margin: 100px 0px 40px;
+}
+
+.mecarriera-title {
+  margin: 40px 0px 32px;
+}
+
+.button-box {
+  border: 1px solid #6bc909;
+  color: #6bc909;
+  width: 200px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 100%;
+  margin-top: 32px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+@media (min-width: 600px) {
+  .button-box.submit-btn-box {
+    width: 425px !important;
+  }
+}
+
+.button-box-loading {
+  border: none !important;
+  width: 200px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  margin-top: 32px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #6bc909;
+}
+
+.button-box.hidden {
+  display: none;
+}
+
+.button-box.disabled {
+  pointer-events: none;
+  border: 1px solid #abacb5;
+  color: #abacb5;
+}
+
+.button-box-min {
+  border: 1px solid #6bc909;
+  color: #6bc909;
+  width: 200px;
+  height: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.button-box:hover {
+  cursor: pointer;
+  background-color: #81df0d;
+  color: #09090e;
+}
+
+.button-line {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 36px;
+}
+
+.new-launches-nft-content {
+  position: relative;
+}
+
+.new-launches-nft-content .button-line {
+  margin-bottom: 23px;
+}
+
+.placeholder-about {
+  margin-bottom: 24px;
+  height: 60px;
+  margin-top: 32px;
+}
+
+.social-icons {
+  cursor: pointer;
+  margin: 32px 8px 0px;
+}
+
+.social-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-link {
+  padding-top: 24px;
+  cursor: pointer;
+}
+
+.page-link:hover {
+  color: #6bc909;
+  cursor: pointer;
+}
+
+.company-title {
+  margin: 60px 0 32px;
+}
+
+.copyright {
+  margin-top: -20px;
+  margin-bottom: 60px;
+}
+
+/* about content */
+.about-content {
+  display: flex;
+  background-color: #222435;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-center-content {
+  margin: 20px 0;
+  padding-bottom: 0 !important;
+  /* width: 600px; */
+}
+
+.question-icon {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0 20px;
+}
+
+.buy-video {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 20px;
+}
+
+.buy-title {
+  margin-top: 60px;
+}
+
+.buy-content {
+  margin-top: 20px;
+  padding-bottom: 0 !important;
+}
+
+/* faq */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .about-content .accordion,
+  .faqs-container .accordion {
+    width: 295px !important;
+  }
+
+  .about-content .title div,
+  .faqs-container .title div {
+    width: 249px;
+  }
+}
+
+.about-content .accordion,
+.faqs-container .accordion {
+  width: 560px;
+}
+
+.about-content .item,
+.faqs-container .item {
+  width: 100%;
+  margin: 0 auto 40px;
+}
+
+.about-content .title,
+.faqs-container .title {
+  border: none !important;
+}
+
+.about-content .title div,
+.faqs-container .title div {
+  font-family: 'Rajdhani-bold';
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  width: 514px;
+}
+
+.about-content .content.line,
+.faqs-container .content.line {
+  border-bottom: 1px solid #56596a;
+  margin-top: 16px;
+}
+
+.about-content .content.show,
+.faqs-container .content.show {
+  font-family: 'Rajdhani-regular';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.about-content .expanded-icon,
+.faqs-container .expanded-icon {
+  color: #6bc909;
+  font-size: 30px;
+}
+
+.about-content .minus,
+.faqs-container .minus {
+  height: 0px;
+  width: 17.5px;
+  border-radius: 0px;
+}
+
+.tutorial-container {
+  width: 930px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tutorials-container .blog-title {
+  margin: 40px;
+  margin-bottom: 25px;
+}
+
+.tutorials-container .unverified-alert {
+  padding-bottom: 5vh;
+}
+.container section.tutorials-section {
+  min-height: unset;
+}
+
+@media (max-width: 1024px) {
+  .tutorial-container {
+    width: 100% !important;
+  }
+
+  .tutorial-container {
+    flex-direction: column;
+  }
+
+  .tutorial-text {
+    width: 550px !important;
+    height: auto !important;
+  }
+
+  .tutorial-title,
+  .tutorial-desc,
+  .tutorial-readmore {
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .tutorial-img {
+    width: 295px !important;
+    height: 166px !important;
+  }
+
+  .tutorial-text {
+    width: 285px !important;
+    height: auto !important;
+  }
+}
+
+.tutorial-img {
+  width: 560px;
+  height: 315px;
+}
+
+.tutorial-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.tutorial-text {
+  width: 330px;
+  height: 192px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tutorial-title {
+  font-family: 'Rajdhani-bold';
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.tutorial-desc {
+  font-family: 'Rajdhani-regular';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.tutorial-readmore {
+  font-family: 'Rajdhani-regular';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #6bc909;
+}
+
+.tutorial-carousel {
+  width: 930px;
+}
+
+.tutorial-carousel .alice-carousel {
+  width: 100% !important;
+}
+
+/* latest create NFT */
+.latest-create-nft {
+  background-color: #12131c;
+}
+
+.latest-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.latest-text-content,
+.blog-content {
+  padding: 0 48px;
+  text-align: center;
+}
+
+.latest-text-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 32px 0px;
+}
+
+.latest-title {
+  margin-top: 60px;
+  margin-bottom: 32px;
+}
+
+.latest-more-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 32px 0px 60px;
+  color: #6bc909;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+/* new launches nft */
+.new-launches-nft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.new-launch-title {
+  /* max-width: 514px; */
+  max-width: 800px;
+  margin: auto;
+}
+
+.new-nft-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+  margin-top: 60px;
+  padding: 0 30px;
+  font-family: 'Rajdhani-bold';
+}
+
+.theme-color {
+  color: #6bc909;
+}
+
+.new-nft-content {
+  margin-top: 32px;
+}
+
+.new-launch-title .new-nft-content {
+  /* max-width: 279px; */
+  max-width: 600px;
+  margin: 32px auto 0px;
+}
+
+.register-button {
+  margin-bottom: 24px;
+}
+
+.new-launches-title {
+  margin-bottom: 24px;
+}
+
+.container > .about-section {
+  display: inline;
+  text-align: inherit;
+}
+
+.container > .tutorials-section {
+  background-color: #171923;
+}
+
+.container > .bottom-section {
+  display: inline;
+  text-align: inherit;
+}
+
+.more-view {
+  color: #6bc909;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.more-view-cover {
+  margin: 32px 0px 0px;
+}
+
+/* common */
+.bottom-line {
+  border-bottom: 1px solid #56596a;
+  margin: 60px 20%;
+}
+
+.input-feedback {
+  color: red;
+  margin-top: 0.25rem;
+  text-align: left;
+  font-size: 14px;
+  width: 292px;
+}
+
+.input-feedback.hidden {
+  display: none !important;
+}
+
+.field-place {
+  width: inherit;
+  height: 20px;
+}
+
+.input-feedback.purchase-error {
+  width: 100%;
+  margin-top: 0px;
+  text-align: right;
+}
+
+.input-feedback.otp-error {
+  /* width: 200px; */
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 80px;
+}
+
+.input-feedback.otp-success {
+  color: #6bc909;
+  text-align: center !important;
+  /* width: 100%; */
+  width: 292px;
+}
+
+.navigation-link {
+  text-decoration: none;
+}
+
+.new-nft-loading {
+  height: 472px;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.carousel-loading {
+  background-color: rgba(0, 0, 0, 0.35);
+  height: 438px;
+  width: 1217px;
+  top: 388px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: -2px 3px 24px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 3px 24px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 3px 24px 5px rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 912px) {
+  .blog-content,
+  .buy-content {
+    width: 100vw;
+  }
+
+  .input-box {
+    width: 300px;
+    color: #171923;
+  }
+
+  .new-nft-title {
+    font-size: 30px;
+  }
+
+  .footer-nav-item {
+    width: 75px;
+    height: 70px;
+  }
+
+  .home {
+    background-size: 100vw 120vh !important;
+  }
+
+  .home-icon {
+    padding: 0 0 10px;
+  }
+
+  .footer {
+    height: 70px;
+  }
+
+  .blog-title {
+    font-size: 22px;
+  }
+
+  .social-icons {
+    /*julian css*/
+    margin: 15px 8px 0px;
+    width: 13%;
+    /*akshay css*/
+    width: 3rem;
+  }
+  /* .tiktok-icon {
+    width: 43px !important;
+    height: 43px !important;
+  } */
+}
+
+@media (max-width: 420px) {
+  .home-img {
+    /* width: 65px; */
+    margin-left: 10px;
+  }
+
+  .footer-nav-item {
+    width: 65px;
+    height: 70px;
+  }
+  .new-launch-title .new-nft-content {
+    margin: 32px 30px 0px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    width: 50vw;
+    left: 25vw;
+    border-radius: 5px;
+  }
+  .footer-nav-item:last-child,
+  .footer-nav-item-unsigned:last-child {
+    border-radius: 0px 5px 5px 0px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .footer {
+    width: 50vw;
+    left: 25vw;
+    border-radius: 5px;
+  }
+  .footer-nav-item:last-child,
+  .footer-nav-item-unsigned:last-child {
+    border-radius: 0px 5px 5px 0px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .footer {
+    width: 40vw;
+    left: 30vw;
+    border-radius: 5px;
+  }
+  .footer-nav-item:last-child .footer-nav-item-unsigned:last-child {
+    border-radius: 0px 5px 5px 0px;
+  }
+  .newsletter-submit {
+    width: 100%;
+  }
+  .newsletter-caption {
+    margin: 0 10px;
+    padding: unset !important;
+    width: 170px !important;
+    letter-spacing: 2px !important;
+    text-transform: uppercase;
+  }
+  .button-box.submit-btn-box {
+    width: 397px !important;
+  }
+}
+
+.heading-section {
+  background-color: #12131c;
+}
+
+.heading-container {
+  width: 560px;
+  height: 100%;
+  margin: 10px auto;
+}
+
+@media only screen and (max-width: 560px) {
+  .heading-container {
+    width: 295px;
+  }
+}
+
+.heading-header {
+  margin-top: 40px;
+  font-family: 'Rajdhani-bold';
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.heading-title {
+  margin-top: 8px;
+  font-family: 'Rajdhani-bold';
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #6bc909;
+}
+
+.unverified-alert {
+  width: 260px;
+  text-transform: uppercase;
+  color: #c9a009;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 240px);
+  justify-content: center;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.unverified-alert.popup-alert {
+  font-size: 70px !important;
+  line-height: 60px !important;
+  height: 9em !important;
+}
+.not-launched-section .unverified-alert {
+  height: fit-content;
+  margin-bottom: 40px;
+}
+.tutorials-container .unverified-alert {
+  width: 560px;
+  height: unset;
+}
+
+.alert-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 560px) {
+  .heading-title {
+    font-size: 56px;
+    line-height: 48px;
+  }
+  .tutorials-container .unverified-alert {
+    width: 295px;
+  }
+}
+
+.heading-desc {
+  margin: 24px 0 20px;
+  font-family: 'Rajdhani-regular';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.newsletter-wrapper {
+  /* width: 933px; */
+  height: 100%;
+  /* margin: auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter-success {
+  width: 240px;
+}
+
+.intro-grid {
+  margin-bottom: 60px;
+  width: 630px !important;
+}
+
+/** Notification popup */
+.modal-content.notification-popup {
+  height: 420px;
+  margin-top: 200px!important;
+}
+
+.modal-content.notification-popup .bottom-caption-wrapper {
+  width: 100%;
+  padding: 0 10px;
+}
+
+.modal-content.notification-popup form input {
+  width: 300px;
+}
+
+.modal-content.notification-popup form span {
+  width: 300px;
+}
+
+.modal-content.notification-popup form span div {
+  height: 50px;
+}
+
+.none-backdrop-filter {
+  backdrop-filter: none;
+}
+
+@media only screen and (max-width: 420px) {
+  .modal-content.notification-popup {
+    width: 90vw;
+  }
+  .modal-content.notification-popup form input,
+  .modal-content.notification-popup form span div {
+    width: 250px;
+  }
+  .modal-content.notification-popup .close-notification {
+    right: -7px;
+    top: -9px;
+  }
+}
+
+@media only screen and (max-width: 933px) {
+  .intro-grid {
+    width: 100% !important;
+    margin: 38px 0 82px !important;
+  }
+}
+
+.intro-header {
+  margin-top: 40px;
+  font-family: 'Rajdhani-bold';
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.intro-title {
+  margin-top: 4px;
+  margin-bottom: 20px;
+  font-family: 'Rajdhani-bold';
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #6bc909;
+}
+
+.heading-desc > a {
+  color: #6bc909;
+}
+
+.intro-video {
+  position: relative;
+}
+
+.intro-watch {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 1;
+  opacity: 1;
+}
+
+@media screen and (max-width: 560px) {
+  .intro-watch div {
+    font-size: 22px !important;
+  }
+}
+
+.get-container {
+  width: 560px;
+  margin: auto;
+}
+
+.get-container.m-60 {
+  margin: 60px auto;
+}
+
+.get-container a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 560px) {
+  .get-container {
+    width: 100%;
+    padding: 40px 24px;
+  }
+}
+
+.get-header {
+  /*julian's css*/
+  margin-top: 80px;
+  font-family: 'Rajdhani-bold';
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0px;
+  text-align: center;
+  /*akshay's css*/
+  margin-top: unset;
+}
+
+.get-content {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 560px) {
+  .get-content {
+    flex-direction: column;
+    /* height: 166px; */
+  }
+
+  .get-desc {
+    width: 100% !important;
+  }
+
+  .get-title {
+    text-align: center !important;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+
+  .get-text {
+    text-align: center !important;
+  }
+}
+
+.get-index {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  width: 50px;
+  height: 50px;
+
+  border: 2px solid #6bc909;
+  border-radius: 66px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  color: #6bc909;
+
+  font-family: 'Rajdhani-bold';
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.get-index div {
+  align-self: center;
+}
+
+.get-desc {
+  width: 486px;
+  margin-top: 24px;
+}
+
+.get-text {
+  margin-top: 8px;
+
+  font-family: 'Rajdhani-regular';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.get-more-btn {
+  margin: 60px auto;
+  height: 50px;
+  width: 280px;
+  border-radius: 8px;
+  background: #81df0d;
+  color: #171923;
+  font-family: 'Rajdhani-semibold';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}

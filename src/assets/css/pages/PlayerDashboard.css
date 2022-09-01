@@ -1,0 +1,819 @@
+.player-dashboard-container {
+  color: #abacb5;
+  margin-top: 60px !important;
+  /* max-width: 375px; */
+  text-align: left !important;
+  /* padding: 20px; */
+}
+
+.modal-content .player-dashboard-container {
+  margin-top: 0px !important;
+}
+
+.player-coin-request,
+.player-coin-launch {
+  width: 327px !important;
+  padding: 20px 15px 20px 25px;
+  margin: 20px 10px 10px 0px;
+  overflow-x: hidden;
+}
+
+.create-player-error {
+  height: 60px;
+}
+
+.status-check-btn {
+  cursor: pointer !important;
+}
+
+.player-coin-request.in-progress {
+  height: inherit;
+  display: flex;
+  width: 100% !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-tabwrapper {
+  width: 100%;
+  background: #171923;
+  display: flex;
+  justify-content: center;
+}
+.main-tabwrapper > .tabs-container {
+  overflow: auto;
+  height: unset;
+  border-radius: 0;
+  width: 420px;
+}
+
+.main-tabwrapper > .tabs-container > .tab-item {
+  padding: unset !important;
+}
+
+.player-dashboard-container .tabs-container .tab-item {
+  width: unset;
+}
+
+.player-dashboard-container > .fullwidth > .textinput-wrapper {
+  width: 100% !important;
+}
+
+.player-dashboard-container .textinput-wrapper input {
+  font-family: 'Rajdhani-regular';
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+}
+
+.player-dashboard-container .player-dashboard-title {
+  font-family: 'Rajdhani-bold';
+  font-weight: 700;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.player-coin-form > .textinput-wrapper {
+  width: 100% !important;
+}
+
+.player-dashboard-container .player-avatar {
+  margin: 40px auto;
+  width: 150px;
+  min-width: 150px;
+  height: 150px;
+  background: transparent;
+  border-radius: 150px;
+  border: 4px solid #abacb5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.player-dashboard-container .player-avatar .player-avatar-root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 150px;
+}
+.player-dashboard-container
+  .player-avatar
+  .player-avatar-root
+  .player-avatar-picture {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.player-dashboard-container.loader-center {
+  justify-content: center;
+}
+
+.player-dashboard-container .textinput-wrapper {
+  width: unset !important;
+}
+
+.player-dashboard-container .createnft-fileload .player-avatar-root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.player-dashboard-container
+  .createnft-fileload
+  .player-avatar-root
+  .player-avatar-picture {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.player-dashboard-container .player-avatar-svg {
+  width: 70px;
+  height: 83px;
+}
+
+.player-dashboard-container .icon-camera-error {
+  position: absolute;
+  right: 0.5px;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  background: #eb5757;
+  border-radius: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.player-dashboard-container .icon-camera {
+  position: absolute;
+  right: 0.5px;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  background: #6bc909;
+  border-radius: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.player-dashboard-container .icon-camera-svg {
+  color: #1a1a1a;
+}
+
+.player-dashboard-container .player-dashboard-desc {
+  font-family: 'Rajdhani-regular';
+  font-weight: 400;
+  font-size: 18px;
+  margin: 16px 0;
+  color: white;
+}
+
+.player-dashboard-container .input-label {
+  font-family: 'Rajdhani-semibold';
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.name-label {
+  text-transform: capitalize;
+}
+
+.player-dashboard-container .player-coin-request .input-label {
+  margin-top: 24px;
+}
+
+.player-dashboard-container .player-dashboard-notification {
+  font-family: 'Rajdhani-regular';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18.2px;
+  margin-top: 40px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.player-dashboard-container .player-dashboard-error {
+  font-family: 'Rajdhani-semibold';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #eb5757;
+  margin-bottom: 24px;
+}
+
+.player-dashboard-container .terms-conditions-check {
+  font-family: 'Rajdhani-semibold';
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-dashboard-container .terms-conditions-check div {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.player-dashboard-container .pending-verification {
+  font-family: 'Rajdhani-semibold';
+  font-weight: 600;
+  font-size: 18px;
+  color: #6bc909;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.player-dashboard-container .birthday {
+  display: flex;
+}
+
+.player-dashboard-container .birthday > .textinput-wrapper {
+  width: 90px !important;
+  margin: 4px !important;
+}
+
+.player-dashboard-container .player-dashboard-select > .MuiFormControl-root {
+  width: 100%;
+  margin: 8px 0 0;
+  border-radius: 4px;
+  background-color: #2c2f45;
+  position: relative;
+}
+.player-dashboard-container
+  .player-dashboard-select
+  > .MuiFormControl-root
+  > .select-placeholder {
+  z-index: 10;
+}
+
+.player-select-disabled {
+  pointer-events: none;
+}
+
+.MuiTypography-body1 {
+  font-family: 'Rajdhani-semibold' !important ;
+}
+
+.select-placeholder {
+  font-family: 'Rajdhani-regular';
+  position: absolute;
+  left: 22px;
+  top: -2px;
+}
+
+.MuiFormControlLabel-root {
+  margin-right: 5px !important;
+}
+
+.player-dashboard-container .player-coin {
+  width: 420px;
+  /* width: 100%; */
+  padding: 20px;
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 420px) {
+  .player-dashboard-container .player-coin {
+    width: 100%;
+  }
+}
+
+.player-dashboard-container .player-coin .player-avatar {
+  /* background: url('@assets/images/players/neymar_jr.png'); */
+  background-size: contain;
+}
+
+.player-dashboard-container .accordion {
+  font-family: 'Rajdhani-semibold';
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.player-dashboard-container .accordion .content.show {
+  max-height: 500px;
+}
+
+.player-dashboard-container .accordion .title h2 {
+  color: white;
+  font-size: 18px;
+}
+
+.player-dashboard-container .accordion .contract-address {
+  font-family: 'Rajdhani-regular';
+  font-weight: 400;
+  padding-left: 4px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+.player-dashboard-container .accordion .contract-address > a {
+  color: #6bc909;
+}
+
+.player-dashboard-container .accordion .contract-address .MuiSvgIcon-root {
+  width: 15px;
+  height: 15px;
+}
+
+.player-dashboard-container .accordion .account-address {
+  font-family: 'Rajdhani-regular';
+  font-weight: 400;
+  padding-left: 4px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.player-dashboard-container .accordion .account-address > a {
+  color: #6bc909;
+}
+
+.player-dashboard-container .accordion .account-address .MuiSvgIcon-root {
+  width: 15px;
+  height: 15px;
+}
+
+.player-dashboard-container .accordion .cryptocurrency-desc {
+  font-family: 'Rajdhani-regular';
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.player-dashboard-container .matic-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #8247e5;
+  padding-top: 10px;
+}
+
+.player-dashboard-container .accordion .nft-image-section {
+  max-width: 200px;
+}
+
+.player-dashboard-container .price-button-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.player-dashboard-container .price-button-section div {
+  padding-right: 5px;
+}
+
+.player-dashboard-container .accordion .nft-name {
+  width: unset;
+  padding-left: 10px;
+}
+
+.player-dashboard-container .accordion .image-border {
+  margin: 0;
+}
+
+.player-dashboard-container .accordion .MuiFormControl-root {
+  padding-left: 20px;
+  width: 100%;
+}
+.player-dashboard-container .accordion .MuiTypography-root {
+  width: 100%;
+}
+
+.player-dashboard-container .player-draft {
+  width: 100%;
+  padding-left: 23px;
+  padding-right: 20px;
+  margin-right: 5px;
+}
+
+.player-dashboard-container .player-draft .accordion {
+  margin-top: 10px;
+}
+
+.player-dashboard-container
+  .player-draft
+  .accordion
+  .price-button-section
+  .MuiSvgIcon-root {
+  width: 20px;
+  height: 20px;
+}
+
+.drafts-search-bar {
+  height: 60px;
+  padding: 0px;
+  width: unset !important;
+}
+
+.player-dashboard-container .player-draft .nft-item {
+  padding: 0px;
+}
+
+.player-dashboard-container .player-draft .list-header {
+  font-family: 'Rajdhani-semibold';
+  font-weight: 600;
+  font-size: 12px;
+  color: #abacb5;
+  padding-left: 10px;
+  padding-right: 30px;
+}
+
+.player-dashboard-container .new-draft {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.player-dashboard-container .new-draft .new-draft-title {
+  font-family: 'Rajdhani-bold';
+  font-weight: 700;
+  font-size: 22px;
+  color: white;
+  margin-top: 30px;
+}
+
+.player-dashboard-container .new-draft .list-header {
+  padding-left: 20px;
+}
+
+.player-dashboard-container .nft-tab-title {
+  font-family: 'Rajdhani-bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #ffffff;
+  margin: 40px 0;
+}
+
+.player-dashboard-container .nft-create-btn {
+  margin: auto;
+  font-size: 18px;
+  margin-bottom: 40px;
+  width: 280px;
+}
+
+.player-dashboard-container .nft-gallery-btn {
+  margin: auto;
+  font-size: 18px;
+  margin-bottom: 40px;
+  width: 280px;
+  border: 1px solid #81df0d;
+  background: #212435;
+  color: #81df0d;
+}
+
+.player-dashboard-container .nft-gallery-btn:hover {
+  background: #81df0d;
+  color: #212435;
+}
+
+.player-dashboard-container .createnft-fileload {
+  min-width: 295px;
+  width: 295px;
+  height: 295px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  overflow: hidden;
+  border: 4px solid #abacb5;
+  margin: 0 auto 40px auto;
+}
+
+.player-dashboard-container .createnft-fileload svg {
+  width: 103px;
+  height: 90px;
+  color: #abacb5;
+}
+
+.player-dashboard-container .createnft-fileload-btn {
+  font-family: 'Rajdhani-semibold';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-decoration-line: underline;
+  color: #abacb5;
+  margin: 16px auto 40px auto;
+  cursor: pointer;
+}
+
+.player-dashboard-container .createnft-fileload-description {
+  font-family: 'Rajdhani-semibold';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #171923;
+  margin: 0 auto;
+  padding: 20px;
+  background: #81df0d;
+  cursor: pointer;
+}
+
+.player-dashboard-container .createnft-input-container {
+  padding: 0 24px;
+}
+
+.player-dashboard-container .createnft-input-item {
+  margin-bottom: 24px;
+}
+
+.player-dashboard-container .createnft-input-item .textinput-wrapper {
+  width: unset;
+}
+
+.player-dashboard-container .createnft-input-item > div > .MuiFormControl-root {
+  width: 100%;
+  margin: 8px 0 0;
+  border-radius: 4px;
+  background-color: #2c2f45;
+}
+.player-dashboard-container
+  .createnft-input-item
+  > div
+  > .MuiFormControl-root
+  .MuiSelect-icon {
+  color: #6bc909 !important;
+}
+
+.player-dashboard-container .bidding-date {
+  display: flex;
+  align-items: center;
+}
+
+.player-dashboard-container
+  .createnft-input-item
+  .bidding-date
+  .textinput-wrapper {
+  width: 68px;
+  margin-right: 8px;
+}
+
+.player-dashboard-container
+  .createnft-input-item
+  .bidding-date
+  .textinput-wrapper
+  input {
+  padding: 16px;
+}
+
+.player-dashboard-container .createnft-comment {
+  font-family: 'Rajdhani-semibold';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #abacb5;
+  margin: 40px auto;
+  justify-content: center;
+}
+
+.player-dashboard-container .createnft-createbtn {
+  margin: auto;
+  font-family: 'Rajdhani-semibold';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 125%;
+  margin-bottom: 40px;
+}
+
+.player-dashboard-container .NftList-poll-root {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.player-dashboard-container .NftList-poll-container {
+  background: linear-gradient(
+      158.69deg,
+      rgba(255, 255, 255, 0.1) -39.2%,
+      rgba(255, 255, 255, 0) 75.55%,
+      rgba(255, 255, 255, 0.0905389) 121.15%
+    ),
+    rgba(23, 25, 35, 0.2);
+  border-radius: 16px;
+  padding: 16px 16px 27px 16px;
+  font-family: 'Rajdhani-semibold';
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.player-dashboard-container .NftList-poll-container .NftList-poll-header {
+  font-family: 'Rajdhani-semibold';
+  font-style: normal;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 22px;
+  color: #6bc909;
+  margin-top: 16px;
+  margin-bottom: 27px;
+  text-align: center;
+}
+
+.player-dashboard-container .NftList-poll-container .NftList-poll-item {
+  border-radius: 10px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #6bc909;
+  margin-bottom: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #12131c;
+  cursor: pointer;
+}
+
+.player-dashboard-container .NftList-poll-container .NftList-poll-item:hover {
+  height: 70px;
+  transition: 0.3s;
+  background-color: #1a1c29;
+}
+
+.player-dashboard-container .NftList-poll-closed-container {
+  cursor: pointer;
+}
+
+.player-dashboard-container .NftList-poll-closed-container:hover {
+  transition: 0.5s;
+}
+
+.player-dashboard-container .NftList-poll-container .NftList-poll-footer {
+  font-family: 'Rajdhani-regular';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17.5px;
+  color: #abacb5;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.player-dashboard-container
+  .NftList-poll-container
+  .NftList-poll-footer
+  .arrow-down {
+  width: 15px;
+  height: 15px;
+  padding-left: 5px;
+}
+
+.vote-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.player-dashboard-container .createpoll-answer-addbtn {
+  font-family: 'Rajdhani-semibold';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration-line: underline;
+  color: #6bc909;
+  margin: 24px auto 40px 24px;
+}
+
+.player-dashboard-container .createpoll-input-container {
+  padding: 0 24px;
+}
+
+.player-dashboard-container .createpoll-input-item {
+  margin-bottom: 24px;
+}
+
+.player-dashboard-container .createpoll-input-item .textinput-wrapper {
+  width: unset;
+}
+
+.player-dashboard-container .createpoll-input-item > .createpoll-textarea {
+  width: 100%;
+  background: #2c2f45;
+  border-radius: 4px;
+  margin-top: 6px;
+  height: 126px;
+  padding: 16px;
+  border: none;
+  resize: none;
+}
+
+.player-dashboard-container
+  .createpoll-input-item
+  > .createpoll-textarea::placeholder {
+  font-family: 'Rajdhani-regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #abacb5;
+}
+
+.player-dashboard-container .bidding-date {
+  display: flex;
+  align-items: center;
+}
+
+.player-dashboard-container
+  .createpoll-input-item
+  .bidding-date
+  .textinput-wrapper {
+  width: 68px;
+  margin-right: 8px;
+}
+
+.player-dashboard-container
+  .createpoll-input-item
+  .bidding-date
+  .textinput-wrapper
+  input {
+  padding: 16px;
+}
+
+.player-dashboard-container .createpoll-createbtn {
+  margin: auto;
+  font-family: 'Rajdhani-semibold';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 125%;
+  margin-bottom: 40px;
+}
+/* Styles for cropper */
+.player-dashboard-container .box {
+  display: inline-block;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.player-dashboard-container .img-preview {
+  overflow: hidden;
+}
+.player-dashboard-container .cropper-crop-box,
+.cropper-view-box {
+  border-radius: 50%;
+}
+
+.player-dashboard-container .cropper-view-box {
+  box-shadow: 0 0 0 1px #39f;
+  outline: 0;
+}
+
+.player-dashboard-container .cropper-container,
+.player-dashboard-container .button-line {
+  margin-top: 10px;
+}
+
+.player-dashboard-container .button-line button {
+  width: 80px;
+  cursor: pointer;
+}
+
+.player-dashboard-container .form-submit-btn {
+  width: 280px;
+}

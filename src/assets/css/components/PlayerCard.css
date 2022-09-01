@@ -1,0 +1,407 @@
+.card {
+  width: 280px;
+  height: 413px;
+  background: url('@assets/images/card1-bg-min.png'), #09090e;
+  background-blend-mode: lighten, normal;
+  border-radius: 16px;
+  padding: 20px 24px 3px 24px;
+  font-family: 'Rajdhani-bold';
+  margin: auto;
+  cursor: pointer;
+}
+
+.inside-card {
+  font-weight: 700;
+  font-size: 21px;
+  display: flex;
+  justify-content: space-between;
+  /* margin-bottom: 2px; */
+  align-items: center;
+}
+
+.profile-hovered-img {
+  background: #6bc909 !important;
+  color: #6bc909;
+}
+
+.time {
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  margin-top: 2px;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border-radius: 50%;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(to top, #f3b127, #ffffff, #f3b127);
+}
+
+.img::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  background-color: #222435;
+  border-radius: 50%;
+}
+
+.img-radius {
+  border-radius: 50%;
+  z-index: 1;
+  padding: 4px;
+}
+
+.img-radius.cache-img {
+  border-radius: 50%;
+  z-index: 1;
+  padding: 4px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 19px;
+  color: #f3b127;
+  margin-top: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.name.player-title-name {
+  word-break: break-word;
+  width: 232px;
+  white-space: unset !important;
+  overflow: unset !important;
+  text-overflow: unset !important;
+  height: 40px;
+}
+
+.name.player-title-name.player-name-active {
+  color: #6bc909;
+}
+
+.divide {
+  height: 14px;
+  border-bottom: 1px solid #56596a;
+  margin-bottom: 12px;
+}
+
+.changed-price,
+.coin-issued,
+.holders {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 2px 0;
+}
+
+.matic-price {
+  white-space: nowrap;
+  width: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.matic-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.matic-wrapper.details > img {
+  margin-right: 0px;
+}
+
+.matic-wrapper > img {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 2px;
+  margin-right: 5px;
+}
+
+.number-color {
+  /* color: #6bc909; */
+  /* animation: background-fade 10s infinite; */
+}
+
+.number-color.matic-figure {
+  align-items: center;
+  display: flex;
+}
+
+.player-table-matic {
+  display: flex;
+  height: 50px;
+  width: 100px;
+}
+
+.currency-binder {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: inherit;
+}
+.currency-binder > span {
+  text-align: left;
+}
+
+.currency-binder > img {
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+
+.currency-binder:nth-child(1) {
+  width: 30px;
+}
+
+.currency-binder:nth-child(2) {
+  width: 70px;
+}
+
+.number-color.matic-figure > span:nth-child(2) {
+  margin-top: 5px;
+}
+
+.matic-price-box {
+  display: flex;
+  align-items: center;
+}
+
+.matic-price-box > img {
+  margin-right: 2px;
+  height: 20px;
+  width: 20px;
+}
+
+/* .number-color.pt-5 {
+  padding-top: 5px;
+} */
+
+.number-color.matic-value {
+  /* height: 25px; */
+  margin-right: 5px;
+}
+
+.number-color.usd-price {
+  /* white-space: nowrap;
+  width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis; */
+  text-align: right;
+}
+
+.number-color.loss {
+  color: #f54f4f;
+  animation: fadeoutBgLoss 3s; /***Transition delay 3s fadeout is class***/
+  -moz-animation: fadeoutBgLoss 3s; /* Firefox */
+  -webkit-animation: fadeoutBgLoss 3s; /* Safari and Chrome */
+  -o-animation: fadeoutBgLoss 3s;
+}
+
+.number-color.profit {
+  color: #6bc909;
+  animation: fadeoutBgProfit 3s; /***Transition delay 3s fadeout is class***/
+  -moz-animation: fadeoutBgProfit 3s; /* Firefox */
+  -webkit-animation: fadeoutBgProfit 3s; /* Safari and Chrome */
+  -o-animation: fadeoutBgProfit 3s;
+}
+
+@keyframes fadeoutBgProfit {
+  from {
+    background-color: #6bc909;
+    color: white;
+  } /** from color **/
+  to {
+    color: #6bc909;
+    background-color: transparent;
+  } /** to color **/
+}
+
+@-moz-keyframes fadeoutBgProfit {
+  /* Firefox */
+  from {
+    background-color: #6bc909;
+    color: white;
+  }
+  to {
+    color: #6bc909;
+    background-color: transparent;
+  }
+}
+
+@-webkit-keyframes fadeoutBgProfit {
+  /* Safari and Chrome */
+  from {
+    color: white;
+    background-color: #6bc909;
+  }
+  to {
+    color: #6bc909;
+    background-color: transparent;
+  }
+}
+
+@-o-keyframes fadeoutBgProfit {
+  /* Opera */
+  from {
+    color: white;
+    background-color: #6bc909;
+  }
+  to {
+    color: #6bc909;
+    background-color: transparent;
+  }
+}
+/*-------------------------------------------------///////*/
+@keyframes fadeoutBgLoss {
+  from {
+    background-color: #f54f4f;
+    color: white;
+  } /** from color **/
+  to {
+    color: #f54f4f;
+    background-color: transparent;
+  } /** to color **/
+}
+
+@-moz-keyframes fadeoutBgLoss {
+  /* Firefox */
+  from {
+    background-color: #f54f4f;
+    color: white;
+  }
+  to {
+    color: #f54f4f;
+    background-color: transparent;
+  }
+}
+
+@-webkit-keyframes fadeoutBgLoss {
+  /* Safari and Chrome */
+  from {
+    background-color: #f54f4f;
+    color: white;
+  }
+  to {
+    color: #f54f4f;
+    background-color: transparent;
+  }
+}
+
+@-o-keyframes fadeoutBgLoss {
+  /* Opera */
+  from {
+    background-color: #f54f4f;
+    color: white;
+  }
+  to {
+    color: #f54f4f;
+    background-color: transparent;
+  }
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.link-icon {
+  transform: rotate(-45deg);
+  color: #abacb5;
+}
+
+.link-icon.link-icon-hovered {
+  filter: invert(0%) sepia(38%) saturate(2394%) hue-rotate(41deg)
+    brightness(109%) contrast(90%);
+}
+
+.link-color {
+  color: #abacb5;
+}
+
+.link-color.profile-txt-active {
+  color: #6bc909;
+}
+
+.bottom-part {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.bottom-part .buy {
+  text-transform: uppercase;
+  color: #6bc909;
+  font-weight: 700;
+  font-size: 18px;
+  width: 80px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  margin-left: -24px;
+  border-top-right-radius: 100px;
+}
+
+.bottom-part .buy:hover {
+  color: #ec682c;
+  cursor: pointer;
+}
+
+.bottom-part .sell {
+  text-transform: uppercase;
+  color: #ec682c;
+  font-weight: 700;
+  font-size: 18px;
+  width: 80px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  margin-right: -24px;
+  border-top-left-radius: 100px;
+}
+
+.bottom-part .sell:hover {
+  color: #6bc909;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 420px) {
+  .bottom-part {
+    margin-top: 18px;
+    height: 50px;
+  }
+
+  .bottom-part .buy {
+    width: 85px;
+    margin-left: -25px;
+  }
+
+  .bottom-part .sell {
+    width: 85px;
+    margin-right: -25px;
+  }
+}

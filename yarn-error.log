@@ -1,0 +1,161 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js
+
+PATH: 
+  C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\TortoiseGit\bin;C:\Program Files\Git\cmd;C:\Program Files\MongoDB\Server\4.4\bin;C:\msys64\mingw64\bin;C:\Program Files\Go\bin;C:\Program Files\nodejs\;C:\Users\Genie\AppData\Local\Microsoft\WindowsApps;C:\Users\Genie\AppData\Local\Yarn\bin;C:\Users\Genie\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Genie\go\bin;C:\ProgramData\Genie\GitHubDesktop\bin;C:\Users\Genie\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  16.15.1
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@mui/icons-material/-/icons-material-5.8.4.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141376:19)
+      at Object.onceWrapper (node:events:641:28)
+      at ClientRequest.emit (node:events:527:28)
+      at TLSSocket.emitRequestTimeout (node:_http_client:771:9)
+      at Object.onceWrapper (node:events:641:28)
+      at TLSSocket.emit (node:events:539:35)
+      at TLSSocket.Socket._onTimeout (node:net:516:8)
+      at listOnTimeout (node:internal/timers:559:17)
+      at processTimers (node:internal/timers:502:7)
+
+npm manifest: 
+  {
+    "name": "kookoo",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+      "start": "craco start",
+      "start:testing": "env-cmd -f .env.testing craco start",
+      "start:staging": "env-cmd -f .env.staging craco start",
+      "start:production": "env-cmd -f .env.production craco start",
+      "start:development": "env-cmd -f .env.development craco start",
+      "build": "craco build",
+      "build:testing": "env-cmd -f .env.testing craco build",
+      "build:staging": "env-cmd -f .env.staging craco build",
+      "build:production": "env-cmd -f .env.production craco build",
+      "build:development": "env-cmd -f .env.development craco build",
+      "test": "craco test",
+      "eject": "craco eject",
+      "prettier:base": "prettier --parser typescript --single-quote",
+      "prettier:check": "npm run prettier:base -- --list-different \"src/**/*.{ts,tsx,jsx,js}\"",
+      "prettier:format": "npm run prettier:base -- --write \"src/**/*.{ts,tsx,jsx,js}\""
+    },
+    "dependencies": {
+      "@coinbase/wallet-sdk": "^3.2.0",
+      "@craco/craco": "^6.4.3",
+      "@emotion/react": "^11.8.2",
+      "@emotion/styled": "^11.8.1",
+      "@fortawesome/react-fontawesome": "^0.1.18",
+      "@material-ui/core": "^4.12.3",
+      "@mui/icons-material": "^5.5.1",
+      "@mui/material": "^5.8.1",
+      "@reduxjs/toolkit": "^1.8.1",
+      "@testing-library/jest-dom": "^5.16.2",
+      "@testing-library/react": "^12.1.4",
+      "@testing-library/user-event": "^13.5.0",
+      "@types/jest": "^27.4.1",
+      "@types/node": "^16.11.26",
+      "@types/react": "^17.0.42",
+      "@types/react-dom": "^17.0.14",
+      "@types/react-redux": "^7.1.23",
+      "@types/react-router-dom": "^5.3.3",
+      "@walletconnect/web3-provider": "^1.7.8",
+      "@web3-react/core": "^6.1.9",
+      "@web3-react/walletconnect-connector": "^6.2.13",
+      "@wert-io/widget-initializer": "^1.2.1",
+      "axios": "^0.26.1",
+      "buffer": "^6.0.3",
+      "classnames": "^2.3.1",
+      "craco-alias": "^3.0.1",
+      "echarts": "^5.3.2",
+      "echarts-for-react": "^3.0.2",
+      "env-cmd": "^10.1.0",
+      "ethers": "^5.6.2",
+      "formik": "^2.2.9",
+      "i18next": "^21.6.14",
+      "i18next-browser-languagedetector": "^6.1.4",
+      "i18next-http-backend": "^1.4.0",
+      "jsencrypt": "^3.2.1",
+      "path-browserify": "^1.0.1",
+      "react": "^17.0.2",
+      "react-alice-carousel": "^2.5.1",
+      "react-cropper": "^2.1.8",
+      "react-dom": "^17.0.2",
+      "react-google-recaptcha": "^2.1.0",
+      "react-gtm-module": "^2.0.11",
+      "react-hot-toast": "^2.2.0",
+      "react-hover-video-player": "^9.6.0",
+      "react-i18next": "^11.16.2",
+      "react-image-file-resizer": "^0.4.8",
+      "react-infinite-scroll-component": "^6.1.0",
+      "react-infinite-ticker": "^2.1.1",
+      "react-ios-switch": "^0.1.19",
+      "react-modal": "^3.14.4",
+      "react-otp-input": "^2.4.0",
+      "react-redux": "^7.2.6",
+      "react-router-dom": "^6.2.2",
+      "react-scripts": "4.0.3",
+      "react-simple-image-viewer": "^1.2.1",
+      "react-tooltip": "^4.2.21",
+      "redux-saga": "^1.1.3",
+      "typescript": "^4.6.2",
+      "util": "^0.12.4",
+      "utils": "^0.3.1",
+      "web-vitals": "^2.1.4",
+      "web3modal": "^1.9.6",
+      "yup": "^0.32.11"
+    },
+    "eslintConfig": {
+      "extends": [
+        "react-app",
+        "react-app/jest"
+      ]
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    },
+    "devDependencies": {
+      "@types/classnames": "^2.3.1",
+      "@types/react-google-recaptcha": "^2.1.5",
+      "@types/react-gtm-module": "^2.0.1",
+      "@types/react-modal": "^3.13.1",
+      "@typescript-eslint/eslint-plugin": "^5.16.0",
+      "@typescript-eslint/parser": "^5.16.0",
+      "eslint": "7.11.0",
+      "eslint-config-prettier": "^8.5.0",
+      "eslint-plugin-import": "^2.25.4",
+      "eslint-plugin-jsx-a11y": "^6.5.1",
+      "eslint-plugin-prettier": "^4.0.0",
+      "eslint-plugin-react": "^7.29.4",
+      "eslint-plugin-react-hooks": "^4.3.0",
+      "prettier": "^2.6.0",
+      "tsconfig-paths": "^3.14.1",
+      "tslint-config-prettier": "^1.18.0"
+    },
+    "resolutions": {
+      "@types/react": "17.0.2",
+      "@types/react-dom": "17.0.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

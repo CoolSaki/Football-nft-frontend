@@ -1,0 +1,153 @@
+.menu {
+  margin-top: 60px !important;
+  background-color: #171923;
+  padding: 1vh 29px 0 24px;
+  min-height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+}
+
+.menu-items {
+  margin-top: 30px;
+}
+
+.selected-value-row {
+  display: flex;
+}
+
+.selected-value {
+  color: #6bc909;
+  font-size: 18px;
+}
+
+.menu > .container > .button-box {
+  margin: auto;
+  margin-top: 10px;
+  width: 250px;
+}
+
+.menu > .container > .button-box:hover {
+  color: #09090e !important;
+}
+
+.menu > .container > .bottom-line {
+  margin: 30px 0 24px;
+}
+
+.menu > .container > .menu-items > .notification {
+  margin-bottom: 0px !important;
+}
+
+.menu > .container > .App > .page-link {
+  font-weight: 600;
+  font-size: 16px;
+  color: #abacb5;
+  padding-top: 12px;
+  text-align: left !important;
+}
+
+.menu > .container > .App > .page-link:hover {
+  color: #6bc909;
+  cursor: pointer;
+}
+
+.grey-color {
+  color: #80828f !important;
+}
+
+.grey-border-color {
+  border: 1px solid #80828f !important;
+}
+
+.menu > .container > .social-icons-group > .social-icons {
+  margin: 16px 8px 0px;
+}
+
+.tiktok-icon {
+  border: 1.5px solid #6bc909;
+  border-radius: 10px;
+  width: 3rem;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.tiktok-icon > img {
+  height: 20px;
+  /* height: 33%; */
+}
+
+.menu-language-background {
+  background-color: #171923;
+  border-bottom: 0px;
+}
+
+/* .onboarding-popup { */
+/* margin-top: unset !important;
+  background-color: #fefefe;
+  margin: auto;
+  width: unset ; */
+
+/* margin-top: unset !important; */
+/* background-color: #212435; */
+/* border-radius: 20px; */
+/* margin: auto; */
+/* width: 350px; */
+/* width: 375px; */
+/* min-height: 600px; */
+/* height: 75vh; */
+/* width: unset;*/
+/* } */
+
+.close-menu-login {
+  right: 3px;
+  top: 50px;
+}
+
+@media only screen and (min-width: 992px) {
+  /* .onboarding-popup { */
+  /* margin-top: unset !important; */
+  /* background-color: #fefefe; */
+  /* margin: auto; */
+  /* width: 375px; */
+  /* } */
+  .close-menu-login {
+    right: unset;
+    top: unset;
+  }
+}
+.in-menu-search {
+  margin: 0 18px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  /* .onboarding-popup {
+    width: 95vw;
+  } */
+}
+
+@media only screen and (min-width: 1200px) {
+  .tiktok-icon {
+    border: 1.5px solid #6bc909;
+    border-radius: 10px;
+    /* width: 60px;
+    height: 60px; */
+    /* width: 12.5vw;
+    height: 5.9vh; */
+    /* width: calc(100vw - 366px);
+    height: calc(100vw - 366px); */
+    /* width: 45px;
+    height: 45px; */
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .tiktok-icon > img {
+    height: 20px;
+    /* height: 33%; */
+  }
+}

@@ -1,0 +1,779 @@
+.wallet-container {
+  text-align: center;
+  margin-top: 60px !important;
+}
+
+.wallet-container.deposit-address-container {
+  margin-top: unset !important;
+  margin: 0px 10px;
+  position: relative;
+}
+
+.modal-content .wallet-container,
+.bottom-popup .wallet-container {
+  margin-top: 0px !important;
+  /* padding: 40px 24px; */
+}
+
+.wallet-container > .tabs-container > .wallet-tab {
+  /* width: 96% !important; */
+  width: 116px !important;
+}
+
+.wallet-container > .tabs-container > .wallet-tab > .tab-item:nth-child(1) {
+  /* width: 96% !important; */
+  border-radius: 20px 20px 0 0;
+  width: 115px !important;
+}
+
+.wallet-container .nft-line {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 420px) {
+  .wallet-container .tabs-container {
+    width: 100% !important;
+  }
+}
+
+.wallet-wrapper {
+  border-radius: 0px;
+  width: 100%;
+  /* width: 96%; */
+  /* height: 90vh; */
+}
+
+.sent-matic-container {
+  position: absolute;
+  background: #222435;
+  bottom: 0px;
+  border-radius: 20px;
+  width: inherit;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: 88%;
+  min-height: 576px;
+  z-index: 10;
+  box-shadow: -2px -26px 28px -10px rgba(0, 0, 0, 0.59);
+  -webkit-box-shadow: -2px -26px 28px -10px rgba(0, 0, 0, 0.59);
+  -moz-box-shadow: -2px -26px 28px -10px rgba(0, 0, 0, 0.59);
+}
+
+.sent-matic-container.hidden {
+  display: none !important;
+}
+
+.wallet-wrapper.mobile-wrapper {
+  height: 84vh !important;
+}
+
+.matic-input {
+  width: 297px !important;
+  margin-top: 8px !important;
+  border-radius: 4px !important;
+  border: none;
+  border-radius: 4px;
+  align-self: stretch;
+  flex-grow: 0;
+  margin-top: 8px;
+  text-align: left;
+  text-align: left !important;
+  font-family: 'Rajdhani-semibold';
+}
+
+.wallet-heading {
+  width: 279px;
+  font-size: 30px;
+  line-height: 34px;
+  color: #ffffff;
+}
+
+.wallet-heading.total-balance {
+  width: inherit;
+  margin-top: 46px;
+  margin-bottom: 0px;
+  overflow-wrap: break-word;
+}
+
+.wallet-text {
+  width: 279px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  /* display: flex; */
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  margin: 32px 0px;
+}
+
+.create-secret-caption {
+  width: 300px;
+}
+
+.balance-card {
+  width: 320px;
+  height: 178px;
+  background: #171923;
+  border-radius: 20px;
+  flex: none;
+  margin: 24px 0px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.balance-progress {
+  width: inherit;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+.balance-progress.hidden {
+  display: none !important;
+}
+
+.eth-amt {
+  /* width: 73px; */
+  /* width: 110px; */
+  height: 32px;
+  left: 51px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
+  color: #6bc909;
+  margin: 8px 0px;
+}
+
+.balance-control-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 24px;
+  width: inherit;
+  height: 16px;
+  margin-top: 10px;
+}
+
+.balance-control-wrapper > p {
+  text-decoration-line: underline;
+  color: #abacb5;
+  cursor: pointer;
+}
+
+.balance-control-wrapper > p:hover {
+  color: #6bc909;
+}
+
+.wallet-btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: static;
+  width: 335px;
+  height: 50px;
+  left: 0px;
+  top: 202px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  /* margin: 24px 0px; */
+}
+
+.wallet-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: unset !important;
+  position: static;
+  width: 80px;
+  height: 50px;
+  left: 31.5px;
+  top: 0px;
+  background: #81df0d;
+  border: 1px solid #81df0d;
+  box-sizing: border-box;
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  /* margin: 0; */
+  margin: 0 8px;
+  flex-grow: 0;
+}
+
+.wallet-btn.disabled {
+  background: unset !important;
+  pointer-events: none;
+  color: #81df0d;
+}
+
+.export-key-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #abacb5;
+  flex: none;
+  order: 1;
+  cursor: pointer;
+}
+
+.export-key-text span:hover {
+  color: #81df0d;
+}
+
+.export-key-text svg {
+  font-size: 13px;
+}
+
+.wallet-tab {
+  background-color: transparent !important;
+  width: 114px !important;
+}
+
+.secret-submit {
+  margin: 20px 0 !important;
+}
+
+.wallet-tab > .tab-item {
+  background-color: transparent !important;
+  width: 114px !important;
+}
+
+.passphrase-heading {
+  width: 327px;
+  font-size: 22px;
+  line-height: 130%;
+  margin: 40px 0px;
+}
+
+/* .passphrase-container>.field-wrapper>.textinput-wrapper {
+  width: 327px !important;
+} */
+
+@media only screen and (max-width: 360px) {
+  .secret-form {
+    width: 90vw;
+  }
+
+  .secret-field-wrapper {
+    width: 100%;
+  }
+
+  .secret-field-wrapper label {
+    width: inherit;
+  }
+
+  .secret-field-wrapper > .textinput-wrapper {
+    width: inherit;
+  }
+}
+
+.passphrase-cancel.hidden {
+  display: none !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .create-secret-caption {
+    width: unset !important;
+  }
+}
+
+.player-coins {
+  margin-top: unset !important;
+  width: inherit;
+}
+
+.playercoin-img {
+  margin: 0 20px 0 9px !important;
+}
+
+.playercoin-section {
+  max-width: unset !important;
+}
+
+.playercoin-section > svg {
+  cursor: pointer;
+}
+
+.player-coin-item {
+  cursor: pointer;
+}
+
+.playercoin-price-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0px;
+  width: 93px;
+  height: 36px;
+}
+
+.select_nft_stake {
+  background-color: #81df0d;
+  color: #09090e !important;
+  height: 80px;
+  width: 160px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0px !important;
+}
+
+.select_nft_cancel {
+  background-color: #eb5757;
+  color: #09090e;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-price-wrapper {
+  flex-direction: row;
+  display: flex;
+}
+
+.coin-price1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  color: #6bc909;
+  /* margin: 0px 4px; */
+}
+
+.coin-price2 {
+  font-size: 16px;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  color: #ffffff;
+  flex: none;
+  order: 2;
+}
+
+.coin-price3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.price-slash {
+  width: 7px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  color: #407905;
+  flex: none;
+  margin: 0px 4px;
+}
+
+.form-note {
+  font-size: 16px;
+  margin: 0px;
+  width: 100%;
+  color: red;
+}
+
+.bottom-popup-content .wallet-container {
+  width: 100%;
+  padding: 16px;
+  padding: 40px 30px;
+}
+
+.bottom-popup-content .wallet-container > form > div {
+  font-family: 'Rajdhani-semibold';
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bottom-popup-content .wallet-container .field-wrapper label {
+  color: #abacb5;
+}
+
+.bottom-popup-content .wallet-container .field-wrapper .textinput-wrapper {
+  background-color: #f4f5f6;
+  width: 100%;
+}
+
+.bottom-popup-content
+  .wallet-container
+  .passphrase-container
+  .field-wrapper
+  .textinput-wrapper {
+  background-color: #f4f5f6;
+  /* width: 82%; */
+  width: 100%;
+}
+
+.bottom-popup-content
+  .wallet-container
+  .field-wrapper
+  .textinput-wrapper
+  input {
+  font-family: 'Rajdhani-semibold';
+  color: #171923;
+}
+
+.bottom-popup-content .wallet-container .text-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  color: #abacb5;
+  align-items: center;
+  padding-top: 5px;
+  flex-direction: row;
+}
+
+.bottom-popup-content .wallet-container .green-line-btn {
+  font-size: 18px;
+  color: #6bc909;
+  text-decoration: underline;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.bottom-popup-content .wallet-container .send-divider {
+  position: absolute;
+  bottom: 0px;
+  left: calc(50% - 150px);
+  width: 300px;
+  /*new styling by akshay as it was causing buttons to align left*/
+
+  /* position: absolute; */
+  bottom: 0px;
+  /* width: calc(100% - 32px); 
+  */
+}
+
+.space-block {
+  height: 50px;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+
+.space-block.purchase-alert {
+  margin: 0px;
+  height: unset !important;
+}
+
+.space-block > .input-feedback {
+  width: 100%;
+}
+
+.space-block.hidden {
+  display: none !important;
+}
+
+.passphrase-divider .space-block {
+  height: 70px;
+}
+
+.bottom-popup-content .wallet-container .passphrase-divider {
+  /* position: absolute;
+  bottom: 50px;
+  width: calc(100% - 32px); */
+  /* style removed by akshay to make content fit buttons in secret passphrase */
+  /* position: absolute; */
+  bottom: 50px;
+  /* width: calc(100% - 32px); */
+}
+
+.bottom-popup-content .wallet-container .deposit-divider {
+  position: absolute;
+  bottom: 10px;
+  /* width: calc(100% - 32px); */
+  width: 100%;
+}
+
+.bottom-popup-content .wallet-container .sub-title {
+  font-family: 'Rajdhani-bold';
+  font-weight: 700;
+  font-size: 22px;
+  color: white;
+}
+
+.bottom-popup-content .wallet-container .address-box {
+  margin: 10px;
+  padding: 30px;
+  border: 1px solid #56596a;
+  border-radius: 20px;
+  overflow-wrap: anywhere;
+  line-height: 20px;
+}
+
+.address-box {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+
+  position: static;
+  /* width: 327px; Akshay, please be careful to add fixed width, it often destorys responsive */
+  height: 166px;
+  left: 0px;
+  top: 69px;
+
+  /* Neutral/400 */
+
+  border: 1px solid #56596a;
+  border-radius: 16px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 40px 0px;
+}
+
+.address-box p {
+  margin: 0px;
+  overflow-wrap: break-word;
+  width: 94px;
+  width: 225px;
+}
+
+.address-box.hidden {
+  display: none !important;
+}
+
+.address-box.private-success {
+  height: 190px !important;
+  width: 300px;
+  margin: 40px 13px;
+}
+
+.copy-button {
+  display: flex;
+  padding: 16px;
+  height: 56px;
+  background: #56596a;
+  border-radius: 40px;
+  margin: 16px 0;
+  cursor: pointer;
+}
+
+.bottom-popup-content .wallet-container .address-box p {
+  font-size: 18px;
+}
+
+.bottom-popup-content .wallet-container .copy-button {
+  width: 56px;
+  height: 56px;
+  border: 1px solid #56596a;
+  border-radius: 100%;
+  background: url('@assets/images/wallet-copy.png'), #56596a;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.wallet-container .bottom-border {
+  border-bottom: 1px solid #2c2f45;
+}
+
+.wallet-container .bottom-button-box {
+  height: 170px;
+  margin-top: 50px;
+}
+
+.send-max-coins {
+  display: flex;
+  justify-content: flex-end;
+  /* margin-right: 13px; */
+}
+
+.matic-input {
+  border: none;
+  background: none;
+  outline: none;
+  font-family: 'Rajdhani-semibold';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  background: white;
+  color: #171923;
+  border-radius: 4px 0px 0px 4px;
+  width: 100% !important;
+  padding: 12px 20px;
+  display: inline-block;
+  /* border: 1px solid #ccc; */
+  box-sizing: border-box;
+  text-align: left;
+  border-radius: 4px;
+}
+
+.passphrase-progress-wrapper {
+  justify-content: center;
+  height: 120px;
+  align-items: center;
+  display: none;
+}
+
+/* .passphrase-field {
+    flex-direction: row !important;
+    justify-content: center;
+} */
+.passphrase-container > .export-form-box > .field-wrapper {
+  flex-direction: row !important;
+  justify-content: center;
+}
+
+.passphrase-container > .export-form-box > .passphrase-heading {
+  width: 100%;
+}
+
+.passphrase-container > .export-form-box.hidden {
+  display: none !important;
+}
+
+.passphrase-container > .input-feedback {
+  padding: 0 15px;
+}
+
+.secret-countdown {
+  font-size: 22px;
+  color: #6bc909;
+  margin: 40px 0px;
+}
+
+.transaction-success {
+  width: unset;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+  justify-content: center;
+  padding: unset !important;
+}
+
+.transaction-success > .check-container > svg {
+  font-size: 18vw;
+  color: #6bc909;
+}
+
+.passphrase-progress-wrapper.show {
+  display: flex !important;
+}
+
+.submit-wrapper.hidden {
+  display: none;
+}
+
+.deposit-cancel {
+  position: absolute;
+  bottom: 40px;
+  font-size: 18px;
+  text-decoration-line: underline;
+  color: #6bc909;
+  width: 100%;
+  margin-left: unset !important;
+  left: 0px;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  left: -30px;
+  top: -40px;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  transition: 0.2s;
+}
+
+.tooltip-visible {
+  visibility: visible !important;
+}
+
+.export-key-container {
+  width: unset !important;
+  padding: unset !important;
+  height: 65vh;
+}
+
+.export-key-container > .deposit-cancel {
+  width: 100% !important;
+  bottom: 0px !important;
+}
+
+.export-key-container > .address-box {
+  width: unset !important;
+  height: 190px !important;
+}
+
+.export-key-container > .deposit-divider > .deposit-cancel {
+  width: 85% !important;
+  margin-left: 0px !important;
+}
+
+.coins-available {
+  font-size: 18px;
+  color: #6bc909;
+  text-decoration: underline;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.player-coins-display > .search-bar {
+  width: 360px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .transaction-success > .check-container > svg {
+    font-size: 4vw;
+    color: #6bc909;
+  }
+  .transaction-success > .resend-link {
+    font-size: 20px;
+  }
+  .player-coins-display > .search-bar {
+    width: 360px;
+  }
+}

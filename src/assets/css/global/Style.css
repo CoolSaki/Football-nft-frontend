@@ -1,0 +1,632 @@
+/* Helper classes */
+.mt-60 {
+  margin-top: 60px !important;
+}
+
+.mt-40 {
+  margin-top: 40px !important;
+}
+
+.mb-40 {
+  margin-bottom: 40px !important;
+}
+
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+
+.mt-0 {
+  margin-top: 0px !important;
+}
+
+.mb-0 {
+  margin-bottom: 0px !important;
+}
+
+.mt-5 {
+  margin-top: 5px !important;
+}
+
+.ml-1 {
+  margin-left: 10px;
+}
+
+.p-0 {
+  padding: unset !important;
+}
+
+.m-0auto {
+  margin: 0 auto;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.fullwidth {
+  width: 100%;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-left {
+  display: flex;
+  justify-content: left;
+}
+
+.flex-right {
+  display: flex;
+  justify-content: right;
+}
+
+.flex-middle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.fixed-content {
+  max-width: 360px;
+  width: 360px;
+  margin: auto;
+}
+@media only screen and (max-width: 420px) {
+  .fixed-content {
+    margin: unset;
+  }
+}
+
+.fixed-content-without-margin {
+  max-width: 360px;
+  width: 360px;
+}
+
+.border-top {
+  border-top: 1px solid #2c2f45;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.transparent {
+  opacity: 0;
+}
+
+.flip {
+  transform: rotate(180deg);
+}
+
+.green-color {
+  color: #6bc909 !important;
+}
+
+.red-color {
+  color: #eb5757 !important;
+}
+
+.white-color {
+  color: white !important;
+}
+
+.grey-color {
+  color: grey !important;
+}
+
+.yellow-color {
+  color: #f3b127 !important;
+}
+
+.bg-green-color {
+  background-color: #6bc909 !important;
+}
+
+.bg-red-color {
+  background-color: #eb5757 !important;
+}
+
+.bg-white-color {
+  background-color: white !important;
+}
+
+.bg-grey-color {
+  background-color: grey !important;
+}
+
+.bg-yellow-color {
+  background-color: #f3b127 !important;
+}
+
+.no-border {
+  border: 0px !important;
+}
+
+@media only screen and (max-width: 360px) {
+  .fixed-content,
+  .fixed-content-without-margin {
+    max-width: 360px;
+    width: 320px;
+  }
+}
+
+.btn-disabled {
+  background: none;
+  color: #81df0d;
+  border: 1px solid #81df0d;
+  cursor: pointer;
+}
+
+/* Fix for Blog content */
+
+.blog-container {
+  font-family: 'Rajdhani-regular';
+  margin-top: 100px;
+  width: 100%;
+  background: linear-gradient(
+    360deg,
+    #12131c -54.88%,
+    rgba(18, 19, 28, 0) 100%
+  );
+}
+
+.blog-container #dib-posts a {
+  color: #6bc909;
+}
+
+.blog-container #dib-posts a:visited {
+  color: #f3b127;
+}
+.blog-content #dib-recent-posts #dib-template-2 {
+  width: 90vw;
+}
+@media only screen and (max-width: 420px) {
+  #dib-template-2 {
+    width: unset !important;
+  }
+}
+
+/* Page Container */
+
+.container > section {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  min-height: 70vh;
+  border-radius: 0px;
+  margin: auto;
+  width: unset;
+}
+
+.modal-content > section {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: #212435;
+  flex-direction: column;
+  /* min-height: 70vh; */
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  border-radius: 20px;
+  height: 100%;
+}
+
+/* Tab Container */
+
+.tabs-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  height: 60px;
+  width: 100%;
+  justify-content: space-around;
+  background: #171923;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.tab-item {
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  color: #abacb5;
+  font-family: 'Rajdhani-bold';
+  background: #171923;
+  height: 60px;
+}
+
+.tab-item.disabled {
+  color: #abacb536 !important;
+  pointer-events: none;
+}
+
+.tab-item button {
+  position: static;
+  /* width: 28px; */
+  height: 18px;
+  left: calc(50% - 28px / 2);
+  top: calc(50% - 18px / 2 - 10.5px);
+  font-family: 'Rajdhani-bold';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  display: flex;
+  padding: 0px;
+  align-items: center;
+  text-align: center;
+  color: #abacb5;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  /* margin: 18px 0px; */
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tab-active {
+  border-bottom: 2px solid #6bc909;
+  color: white !important;
+}
+
+@media only screen and (max-width: 420px) {
+  .tabs-container {
+    border-radius: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    /* width: 95% !important; */
+  }
+}
+
+/* Components */
+
+.home {
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+      180deg,
+      rgba(23, 25, 35, 0) 38.16%,
+      #171923 45.99%
+    ),
+    url('@assets/images/stadium-min.png'), #171923;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 60px;
+}
+
+.logo-img {
+  width: 120px;
+}
+
+.wallet-address:hover {
+  cursor: pointer;
+}
+
+/* Nft list */
+
+.list-header {
+  font-family: 'Rajdhani-semibold';
+  color: #abacb5;
+  border-bottom: 1px solid #56596a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.nft-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  border-bottom: 1px solid #2c2f45;
+  font-family: 'Rajdhani-semibold';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 20px 20px 20px 10px;
+  text-align: right;
+  cursor: pointer;
+}
+
+.nft-item.no-data {
+  justify-content: center !important;
+  border: none !important;
+  /* height: 60vh; */
+  height: 68vh;
+}
+
+.nft-item .nft-image-section {
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nft-item .nft-image-section .nft-image {
+  width: 40px;
+  height: 40px;
+  padding: 1px;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.nft-item .image-border {
+  position: relative;
+  margin-left: 20px;
+  margin-right: 10px;
+  display: flex;
+  border-radius: 50%;
+  background: linear-gradient(to top, #f3b127, #ffffff, #f3b127);
+}
+
+.nft-item .image-border::before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  left: 1px;
+  right: 1px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.nft-item .nft-name-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+  padding-left: 20px;
+}
+
+.nft-item .nft-name {
+  color: #f3b127;
+  text-align: left;
+  width: 130px;
+}
+
+.nft-item .nft-price {
+  color: #abacb5;
+}
+
+/* icon color */
+
+.icon-color {
+  margin: 22px;
+  color: white;
+}
+
+.icon-color-search {
+  height: 16px;
+  cursor: pointer;
+}
+
+.icon-color-search.black {
+  color: #09090e;
+}
+
+.icon-color-search.gray {
+  color: #abacb5;
+}
+
+.icon-color:hover {
+  cursor: pointer;
+}
+
+.field-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  position: static;
+  /* width: 299px; This makes awful scroll at Galaxy S9 */
+  /* width: 327px; */
+  /* height: 74px; */
+  left: calc(50% - 327px / 2);
+  top: calc(50% - 74px / 2 - 98px);
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-top: 24px;
+}
+
+/* Nft line */
+
+.nft-line {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.nft-line .nft-card {
+  margin-bottom: 12px;
+  padding: 10px;
+  background: linear-gradient(
+    156.63deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0) 115.46%
+  );
+  border-radius: 8px;
+}
+
+.nft-line .nft {
+  width: 145px;
+  height: 145px;
+  /* background: url('@assets/images/card2-bg-min.png'); */
+  /* background-repeat: no-repeat; */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: auto;
+}
+
+.nft-line .second-part {
+  width: 145px;
+  height: 53px;
+  background-color: inherit;
+  padding: 7.5px 0px;
+  text-align: left;
+  font-family: 'Rajdhani-semibold';
+  font-style: normal;
+}
+
+.nft-line .nft-image {
+  width: 145px;
+  height: 145px;
+  /* border-radius: 10px; */
+}
+
+.nft-line .nft-name {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #80828f;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.nft-line .nft-title,
+.capitalize {
+  text-transform: uppercase;
+}
+
+.uppercase {
+  text-transform: capitalize;
+}
+
+.nft-line .nft-title,
+.nft-line .nft-number {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  color: #ffffff;
+  padding-top: 2px;
+}
+
+.font-16 {
+  font-size: 16px !important;
+}
+
+.margin-bottom-0 {
+  margin-bottom: 0px !important;
+}
+
+@media only screen and (max-width: 360px) {
+  .nft-line .nft {
+    width: 125px;
+    height: 125px;
+  }
+
+  .nft-line .second-part {
+    width: 125px;
+    height: 53px;
+  }
+
+  .nft-line .nft-image {
+    /* width: 105px; */
+    height: 125px;
+  }
+}
+
+/* Accordion */
+
+.item {
+  background: #222435;
+  margin-bottom: 5px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border-bottom: 1px solid #56596a;
+  width: 100%;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.content.show {
+  transition: 0.3s;
+  margin-top: 16px;
+  max-height: 130px;
+}
+
+@media only screen and (max-width: 600px) {
+  .tabs-container {
+    overflow: hidden;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {
+  .tabs-container {
+    overflow-y: hidden;
+    overflow-x: auto;
+  }
+} */
+
+@media only screen and (min-width: 1200px) {
+  .field-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: static;
+    /* width: 299px; This makes awful scroll at Galaxy S9 */
+    /* width: 327px; */
+    /* height: 74px; */
+    /* width: 300px !important; akshay removed width to allow content fit inputs with container*/
+
+    left: calc(50% - 327px / 2);
+    top: calc(50% - 74px / 2 - 98px);
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-top: 24px;
+  }
+  .nft-item.no-data {
+    justify-content: center !important;
+    border: none !important;
+    height: 480px;
+  }
+}

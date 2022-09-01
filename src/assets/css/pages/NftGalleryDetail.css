@@ -1,0 +1,37 @@
+.nft-gallerydetail {
+  padding: 50px 0;
+  width: 380px;
+  margin: auto;
+  text-align: center;
+}
+
+.nft-gallerydetail-title {
+  margin: 50px auto;
+  text-align: center !important;
+}
+
+.nft-gallerydetail .nft-gallerydetail-img {
+  width: 100%;
+}
+
+.nft-gallerydetail .nft-gallerdetail-itemDescription {
+  color: #f76f3e;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.nft-gallerydetail .nft-gallerydetail-btn {
+  margin: 20px auto 50px auto;
+  max-width: 280px;
+}
+
+.nft-gallerydetail .nft-gallerydetail-item {
+  padding: 10px;
+}
+
+@media only screen and (max-width: 400px) {
+  .nft-gallerydetail {
+    width: 100%;
+    padding: 50px 16px;
+  }
+}

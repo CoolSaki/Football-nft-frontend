@@ -1,0 +1,116 @@
+.notifications {
+  min-height: 90vh;
+  background-color: #1e2030;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.notifications > .container {
+  margin-top: 16px;
+  width: 375px;
+}
+
+@media screen and (max-width: 420px) {
+  .notifications > .container {
+    width: 327px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .notifications > .container {
+    width: 300px;
+  }
+}
+
+.switch-container > .bottom-line {
+  margin-bottom: 35px !important;
+}
+
+.notification {
+  margin-bottom: 40px;
+  color: #80828f;
+}
+
+.notification-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Rajdhani-semibold';
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin-bottom: 11px;
+}
+
+.notification-wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.notification-title.plain {
+  color: #fff;
+}
+
+.notification-title.plain:hover {
+  color: #fff;
+}
+
+.notification-title:hover,
+.link-title:hover {
+  color: #6bc909;
+  cursor: pointer;
+}
+
+.notification-title-color {
+  color: #6bc909 !important;
+}
+
+.notification-title .grey-color {
+  display: flex;
+  align-items: center;
+}
+
+.notification-content {
+  font-family: 'Rajdhani-regular';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+
+  color: #80828f;
+  width: 293px;
+}
+
+.notification-date {
+  font-family: 'Rajdhani-semibold';
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #80828F;
+
+  margin-top: 12px;
+}
+
+.notification .selected {
+  color: white;
+}
+
+
+.notification-link {
+  text-decoration: auto;
+}
+
+.link-title {
+  color: #80828f;
+}
+
+.link-title.focussed {
+  color: #6bc909 !important;
+}
